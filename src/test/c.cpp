@@ -1,6 +1,7 @@
 #include <Arduino.h>
 
 char mensaje;
+String leerMensaje();
 
 void setup() {
   Serial.begin(9600);  // Initialize Serial communication
@@ -11,8 +12,8 @@ void loop() {
 
   if (Serial.available())
   {
-    Serial.println("llego algo");
-    mensaje = Serial.read();
+
+    String mensaje = leerMensaje();
     Serial.println(mensaje);
   }
   
@@ -20,4 +21,13 @@ void loop() {
   delay(200);  // Delay for 1 second
 }
 
-char 
+String leerMensaje(){
+  char caracter;
+  String mensaje = "";
+  caracter = Serial.read();
+  while (caracter != '\n'){
+    mensaje += caracter;
+    caracter = Serial.read();
+  }
+  return mensaje;
+} 
