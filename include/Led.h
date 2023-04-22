@@ -2,7 +2,7 @@
 
 #define LED1 9
 #define LED2 10
-#define WRONG_LED 12
+#define WRONG_LED 13
 
 void setupLed();
 void ledOneOn();

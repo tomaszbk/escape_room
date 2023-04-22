@@ -1,6 +1,6 @@
 #ifndef BUZZER_H
 
-#define BUZZER_PIN 13
+#define BUZZER_PIN 12
 // Melody notes in Hz
 #define NOTE_C4 261
 #define NOTE_D4 294
