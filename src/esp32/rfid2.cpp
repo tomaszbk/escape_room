@@ -23,36 +23,42 @@ void setup() {
 	Serial.println("Scan PICC to see UID, SAK, type, and data blocks...");
 	Serial.println("listorta");
 }
- 
-void loop() {
+
+int8_t checkRfid() {
 	// Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle.
 	if ( ! rfid.PICC_IsNewCardPresent()) {
-		return;
+		return 0;
 	}
- 
 	// Select one of the cards
 	if ( rfid.PICC_ReadCardSerial()) {
-		// Dump debug info about the card; PICC_Halt
-		Serial.print("Card UID:");
-					for (byte i = 0; i < rfid.uid.size; i++) {
-							Serial.print(rfid.uid.uidByte[i] < 0x10 ? " 0" : " ");
-							Serial.print(rfid.uid.uidByte[i], HEX);   
-							ActualUID[i] = rfid.uid.uidByte[i];          
-					} 
-		Serial.println("");
-		delay(500);
-		bool isEqual = true;
-		for (int i = 0; i < 4; i++) {
-		if (answer[i] != ActualUID[i]) {
-			isEqual = false;
-			break;
-		}
-		}
-
-		// Check if the values are equal
-		if (isEqual) {
-			Serial.println("correcto!");
-		}
-		delay(500);
+			// Check if the values are equal
+			Serial.println("tarjeta detectada");
+			for (byte i = 0; i < rfid.uid.size; i++) {
+				if (answer[i] != rfid.uid.uidByte[i]){
+					Serial.println("tarjeta erronea");
+					delay(1000);
+					return 0;
+				}				         
+			}
+			delay(1000); //check the card is still present
+			for (int i = 5; i > 0; i--)
+			{	
+				if (rfid.PICC_IsNewCardPresent()) {
+					if (rfid.PICC_ReadCardSerial()) {
+						return 1;
+					}
+				}
+			}
+			Serial.println("tarjeta retirada antes de tiempo");
+			return 0;
 	}
+	return 0;
+}
+
+void loop(){
+	if (checkRfid()){
+		Serial.println("correcto");
+		delay(1000);
+	}
+	
 }
