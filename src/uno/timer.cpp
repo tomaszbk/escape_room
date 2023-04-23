@@ -21,34 +21,37 @@ void setupTimer(){
 }
 
 void updateTimer(){
-    if (minutes == 0 && seconds == 0) {
-    // Serial.println("time is out");
-    } else if (millis() - lastUpdateTime >= 1000)
-    {
-    //paso un segundo
-    seconds--;
-    if(seconds < 0){
-        seconds = 59;
-        minutes -=1;
-    }
-    lastUpdateTime = millis();
+
+    if (!isPaused){
+
+      if (minutes == 0 && seconds == 0) {
+        Serial.println("timeUp"); //time is up message to Node red
+      } else if (millis() - lastUpdateTime >= 1000){
+        //paso un segundo
+        seconds--;
+        if(seconds < 0){
+          seconds = 59;
+          minutes -=1;
+      }
+      lastUpdateTime = millis();
+      }
     }
 
     if(minutes < 10){
-        display(3,0);
-        display(2,minutes);
+      display(3,0);
+      display(2,minutes);
     }
     else{
-        display(3,minutes/10);
-        display(2,minutes%10);
+      display(3,minutes/10);
+      display(2,minutes%10);
     }
     if(seconds < 10){
-    display(1,0);
-    display(0,seconds);
+      display(1,0);
+      display(0,seconds);
     }
     else{
-    display(1,seconds/10);
-    display(0,seconds%10);
+      display(1,seconds/10);
+      display(0,seconds%10);
     }
 }
 
@@ -68,4 +71,9 @@ void display(byte id, unsigned char num) {
   
   digitalWrite(dpins[id], HIGH); // Set the current digit pin high to turn it on
   delay(3);
+}
+
+void resetTimer(){
+  minutes =10;
+  seconds=0;
 }

@@ -4,6 +4,7 @@
 #define LATCH_PIN  3 
 #define CS_PIN  2 
 
+extern int8_t isPaused;
 
 
 //  DP G F E D C B A
@@ -21,5 +22,6 @@
 void setupTimer();
 void updateTimer();
 void display(byte id, unsigned char num);
+void resetTimer();
 
 #endif
