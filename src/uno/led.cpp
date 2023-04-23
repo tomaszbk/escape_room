@@ -18,6 +18,16 @@ void ledTwoOn(){
 
 void ledWrongBlink(){
     digitalWrite(WRONG_LED, HIGH);
-    delay(1000);
+    delay(250);
+    digitalWrite(WRONG_LED, LOW);
+    delay(250);
+    digitalWrite(WRONG_LED, HIGH);
+    delay(250);
+    digitalWrite(WRONG_LED, LOW);
+}
+void ledWrongOn(){
+    digitalWrite(WRONG_LED, HIGH);
+}
+void ledWrongOff(){
     digitalWrite(WRONG_LED, LOW);
 }

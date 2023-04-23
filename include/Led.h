@@ -8,5 +8,7 @@ void setupLed();
 void ledOneOn();
 void ledTwoOn();
 void ledWrongBlink();
+void ledWrongOn();
+void ledWrongOff();
 
 #endif

@@ -15,9 +15,12 @@ int8_t estado = 1; // 0 is False, 1 is True
 int8_t puzzle_actual = 1;
 
 void puzzle1Completed();
+void blockPuzzle1();
+void unblockPuzzle1();
+String leerMensaje();
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(19200);
   Serial.println("empieza setup");
   // servo1.attach(SERVO_PIN);
   setupDisplay();
@@ -30,6 +33,16 @@ void setup() {
 
 void loop() {
   updateTimer();
+  if (Serial.available()){
+    delay(10);
+    String mensaje = leerMensaje();
+    Serial.println(mensaje);
+    if (mensaje == "unlockPuzzle1"){
+      unblockPuzzle1();
+    }
+    
+  }
+  
   if(puzzle_actual == 1){
     int key = getKey();
     if(key != 0){
@@ -46,10 +59,7 @@ void loop() {
           puzzle1Completed();
           Serial.println("puzzle completado");
         }else{
-          incorrectSound();
-          ledWrongBlink();
-          codigo_counter = 0;
-          estado=1;
+          blockPuzzle1();
         }
       }else{
         codigo_counter++;
@@ -72,3 +82,27 @@ void puzzle1Completed(){
   servo1.write(180);
   displayPuzzle2();
 }
+
+void blockPuzzle1(){
+  Serial.println("blockPuzzle1");
+  puzzle_actual = -1;
+  incorrectSound();
+  ledWrongOn();
+  codigo_counter = 0;
+  estado=1;
+}
+void unblockPuzzle1(){
+  ledWrongOff();
+  puzzle_actual =1;
+}
+
+String leerMensaje(){
+  char caracter;
+  String mensaje = "";
+  caracter = Serial.read();
+  while (caracter != '\n'){
+    mensaje += caracter;
+    caracter = Serial.read();
+  }
+  return mensaje;
+} 
