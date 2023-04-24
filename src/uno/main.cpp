@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <Servo.h>
 #include "Buzzer.h"
 #include "Timer.h"
 #include "Led.h"
@@ -8,7 +7,6 @@
 
 // #define SERVO_PIN ?
 
-Servo servo1;
 char codigo[6] = {'3','1','5','4','6','2'};
 int8_t codigo_counter = 0;
 int8_t puzzle1IsCorrect = 1; // 0 is False, 1 is True
@@ -16,6 +14,7 @@ int8_t puzzle_actual = 1;
 int8_t isPaused = 1;
 
 void puzzle1Completed();
+void puzzle2Completed();
 void blockPuzzle1();
 void unblockPuzzle1();
 String leerMensaje();
@@ -36,6 +35,8 @@ void setup() {
 }
 
 void loop() {
+
+  //SERIAL COMMUNICATIONS
   if (Serial.available()){
     delay(10);
     String mensaje = leerMensaje();
@@ -49,6 +50,8 @@ void loop() {
       pauseRoom();
     }else if (mensaje=="restartRoom"){
       restartRoom();
+    }else if (mensaje=="puzzle2Completed"){
+      puzzle2Completed();
     } 
   }
 
@@ -88,14 +91,19 @@ void loop() {
 }
 
 
+
 void puzzle1Completed(){
   correctSound();
   puzzle_actual++;
   Serial.println("puzzle1Completed");
   ledOneOn();
-  //mover servo?
   //servo1.write(180);
   displayPuzzle2();
+}
+void puzzle2Completed(){
+  correctSound();
+  ledTwoOn();
+  displayFinalPuzzle();
 }
 
 void blockPuzzle1(){

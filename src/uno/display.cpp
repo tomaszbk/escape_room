@@ -16,15 +16,22 @@ void setupDisplay(){
 }
 
 void displayPuzzle1(){
+    lcd.clear();
     lcd.setCursor(0,0);
     lcd.print("El desorden es");
     lcd.setCursor(0,1);
-    lcd.print("quizas un orden");
+    lcd.print("el orden");
 }
 
 void displayPuzzle2(){
+    lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("completar");
+    lcd.print("dale la tarjeta");
     lcd.setCursor(0,1);
-    lcd.print("la colec");
+    lcd.print("al lobo");
+}
+void displayFinalPuzzle(){
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("ESCAPA!");
 }

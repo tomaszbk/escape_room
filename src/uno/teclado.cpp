@@ -10,7 +10,7 @@ char keys[ROWS][COLS] = {
 };
 
 byte rowPins[ROWS] = {A0,A1}; // Connect to the row pins of the keypad
-byte colPins[COLS] = {A2, A3, 11};
+byte colPins[COLS] = {A2, A3, 13};
 
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 

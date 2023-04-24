@@ -1,24 +1,21 @@
 #include <Arduino.h>
+#include <Servo.h>
 
-char mensaje;
-String leerMensaje();
+Servo servo1;
 
 void setup() {
-  Serial.begin(9600);  // Initialize Serial communication
-  delay(1000);         // Allow time for Serial monitor to open
+  servo1.attach(A5);
+  delay(250);
 }
 
 void loop() {
 
-  if (Serial.available())
-  {
+  servo1.write(0);
 
-    String mensaje = leerMensaje();
-    Serial.println(mensaje);
-  }
-  
-  
-  delay(200);  // Delay for 1 second
+  delay(2500);  // Delay for 1 second
+  servo1.write(180);
+
+  delay(2500);
 }
 
 String leerMensaje(){
