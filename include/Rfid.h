@@ -3,7 +3,6 @@
 #define SS_PIN    21
 #define RST_PIN   22
 
-
 extern PubSubClient client;
 
 void rfidSetup();

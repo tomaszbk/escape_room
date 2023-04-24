@@ -95,15 +95,15 @@ void loop() {
 void puzzle1Completed(){
   correctSound();
   puzzle_actual++;
-  Serial.println("puzzle1Completed");
   ledOneOn();
-  //servo1.write(180);
   displayPuzzle2();
+  Serial.println("puzzle1Completed");
 }
 void puzzle2Completed(){
   correctSound();
   ledTwoOn();
   displayFinalPuzzle();
+  pauseRoom();
 }
 
 void blockPuzzle1(){

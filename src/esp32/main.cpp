@@ -55,6 +55,7 @@ void loop()
     client.loop();
     if (activated == 1){    
         if (checkRfid()){
+            client.publish("debug","se procede a llamar puzzle2Completed");
             puzzle2Completed();
         }
     }
@@ -62,10 +63,16 @@ void loop()
 
 void callback(char* topic, byte* payload, unsigned int length) {
     client.publish("debug", "esp32 llego mensaje");
-    // client.publish("debug", ""+ message);
-    if (strcmp((const char*)payload,"activatePuzzle2")){
+    client.publish("debug", (const char*)payload);
+    client.publish("debug","ya se envio payload");
+    String payloadStr = "";
+    for (int i = 0; i < length; i++) {
+        payloadStr += (char)payload[i];
+    }
+    client.publish("debug", payloadStr.c_str());
+    if (strcmp((const char*)payload,"activatePuzzle2") == 0){
         activatePuzzle2();
-    }else if (strcmp((const char*)payload,"deactivatePuzzle2"))
+    }else if (strcmp((const char*)payload,"deactivatePuzzle2") == 0)
     {
         deactivatePuzzle2();
     }
@@ -79,6 +86,7 @@ void deactivatePuzzle2(){
     activated=0;
     client.publish("debug","puzzle 2 desactivado");
 }
+
 void puzzle2Completed(){
     client.publish("esp32","puzzle2Completed");
     activated=0;
