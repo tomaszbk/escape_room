@@ -4,8 +4,8 @@
 #include "Led.h"
 #include "Display.h"
 #include "Teclado.h"
+#include "Servom.h"
 
-// #define SERVO_PIN ?
 
 char codigo[6] = {'3','1','5','4','6','2'};
 int8_t codigo_counter = 0;
@@ -25,11 +25,11 @@ void restartRoom();
 void setup() {
   Serial.begin(19200);
   Serial.println("empieza setup");
-  // servo1.attach(SERVO_PIN);
   setupDisplay();
   setupTimer();
+  resetServo();
   setupLed();
-  // setupBuzzer();
+  setupBuzzer();
   Serial.println("termina setup");
   delay(1200);
 }
@@ -50,7 +50,7 @@ void loop() {
       pauseRoom();
     }else if (mensaje=="restartRoom"){
       restartRoom();
-    }else if (mensaje=="puzzle2Completed"){
+    }else if (mensaje=="puzzle2Completed"){ 
       puzzle2Completed();
     } 
   }
@@ -99,8 +99,10 @@ void puzzle1Completed(){
   displayPuzzle2();
   Serial.println("puzzle1Completed");
 }
+
 void puzzle2Completed(){
   correctSound();
+  writeServo180();
   ledTwoOn();
   displayFinalPuzzle();
   pauseRoom();
@@ -137,6 +139,9 @@ void pauseRoom(){
   isPaused = 1;
 }
 void restartRoom(){
+  puzzle_actual = -1;
   isPaused = 1;
+  ledsOff();
   resetTimer();
+  resetServo();
 }

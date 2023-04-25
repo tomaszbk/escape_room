@@ -34,6 +34,7 @@ int8_t checkRfid() {
 			{	
 				if (rfid.PICC_IsNewCardPresent()) {
 					if (rfid.PICC_ReadCardSerial()) {
+						client.publish("debug","se devolvera 1");
 						return 1;
 					}
 				}

@@ -23,6 +23,7 @@ void reconnect();
 
 void setup()
 {
+    // Serial.begin(9600);
     rfidSetup();
     WiFi.begin(ssid, password);
     // Serial.print("Esp32 Connecting to WiFi.");
@@ -62,18 +63,24 @@ void loop()
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
-    client.publish("debug", "esp32 llego mensaje");
-    client.publish("debug", (const char*)payload);
-    client.publish("debug","ya se envio payload");
-    String payloadStr = "";
-    for (int i = 0; i < length; i++) {
-        payloadStr += (char)payload[i];
-    }
-    client.publish("debug", payloadStr.c_str());
-    if (strcmp((const char*)payload,"activatePuzzle2") == 0){
+    // String payloadStr = "";
+    // for (int i = 0; i < length; i++) {
+    //     payloadStr += (char)payload[i];
+    // }
+    // Serial.print("mensaje String payloadStr es: ");
+    // Serial.println(payloadStr);
+
+    char msg[length];
+    memcpy(msg,payload,length);
+    msg[length]='\0';
+
+    // client.publish("fromDevice/debug", "esp32 llego mensaje");
+    // client.publish("fromDevice/debug","2: ");
+    // client.publish("fromDevice/debug", payloadStr.c_str());
+
+    if (strcmp(msg,"activatePuzzle2") == 0){
         activatePuzzle2();
-    }else if (strcmp((const char*)payload,"deactivatePuzzle2") == 0)
-    {
+    }else if (strcmp(msg,"deactivatePuzzle2") == 0){
         deactivatePuzzle2();
     }
 }

@@ -10,5 +10,6 @@ void ledTwoOn();
 void ledWrongBlink();
 void ledWrongOn();
 void ledWrongOff();
+void ledsOff();
 
 #endif
