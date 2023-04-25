@@ -118,7 +118,7 @@ void blockPuzzle1(){
 }
 void unblockPuzzle1(){
   ledWrongOff();
-  puzzle_actual =1;
+  puzzle_actual = 1;
 }
 
 String leerMensaje(){
@@ -139,7 +139,7 @@ void pauseRoom(){
   isPaused = 1;
 }
 void restartRoom(){
-  puzzle_actual = -1;
+  puzzle_actual = 1;
   isPaused = 1;
   ledsOff();
   resetTimer();
