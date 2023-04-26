@@ -1,0 +1,716 @@
+[
+    {
+        "id": "470ac55d308056cc",
+        "type": "tab",
+        "label": "Game Flow and puzzle1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "274ecb0d983305c4",
+        "type": "inject",
+        "z": "470ac55d308056cc",
+        "name": "setup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "f32cfccadd581369"
+            ]
+        ]
+    },
+    {
+        "id": "4937a85bd84d111a",
+        "type": "inject",
+        "z": "470ac55d308056cc",
+        "name": "loop",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "340d183b92963f93"
+            ]
+        ]
+    },
+    {
+        "id": "f32cfccadd581369",
+        "type": "change",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timeRemaining",
+                "pt": "global",
+                "to": "600",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "gameStatus",
+                "pt": "global",
+                "to": "paused",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "puzzleActual",
+                "pt": "global",
+                "to": "1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "puzzleActual",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "e43fbc6f0eec7050"
+            ]
+        ]
+    },
+    {
+        "id": "340d183b92963f93",
+        "type": "function",
+        "z": "470ac55d308056cc",
+        "name": "timer",
+        "func": "var timeRemaining = global.get(\"timeRemaining\");\nif(global.get(\"gameStatus\") == \"unpaused\"){\n    if (timeRemaining > 0){\n        global.set(\"timeRemaining\", timeRemaining -1);\n    }else{\n        //game over\n    }\n}\nmsg.payload = global.get(\"timeRemaining\");\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "aaa791875fe856c8"
+            ]
+        ]
+    },
+    {
+        "id": "0d7a61174d4064e5",
+        "type": "serial out",
+        "z": "470ac55d308056cc",
+        "name": "arduino out",
+        "serial": "7e6eee87061eb334",
+        "x": 610,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "06e2e1be0c5549f4",
+        "type": "serial in",
+        "z": "470ac55d308056cc",
+        "name": "arduino in",
+        "serial": "155d3c96e37d2ef3",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "11c47e3bde9198bc",
+                "19db5a3b7ef7a1d0",
+                "b15023579f3b11d3"
+            ]
+        ]
+    },
+    {
+        "id": "11c47e3bde9198bc",
+        "type": "debug",
+        "z": "470ac55d308056cc",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "fe077ed65e489d35",
+        "type": "delay",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "f577a2216ae7c37b"
+            ]
+        ]
+    },
+    {
+        "id": "f577a2216ae7c37b",
+        "type": "change",
+        "z": "470ac55d308056cc",
+        "name": "set unblockPuzzle1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "unblockPuzzle1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 520,
+        "wires": [
+            [
+                "0d7a61174d4064e5",
+                "11c47e3bde9198bc",
+                "b15023579f3b11d3"
+            ]
+        ]
+    },
+    {
+        "id": "0532d73b54531420",
+        "type": "switch",
+        "z": "470ac55d308056cc",
+        "name": "blockpuzzle or puzzle completed",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "blockPuzzle1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "puzzle1Completed",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 620,
+        "wires": [
+            [
+                "fe077ed65e489d35"
+            ],
+            [
+                "954491e56395e152"
+            ]
+        ]
+    },
+    {
+        "id": "19db5a3b7ef7a1d0",
+        "type": "function",
+        "z": "470ac55d308056cc",
+        "name": "delete whitespaces",
+        "func": "var payload = msg.payload.replace(/\\s/g, '');\nmsg.payload = payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "0532d73b54531420"
+            ]
+        ]
+    },
+    {
+        "id": "9e0c9f54697d3f45",
+        "type": "inject",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "pauseRoom",
+        "payloadType": "str",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "6e6019cbf2ec0b45"
+            ]
+        ]
+    },
+    {
+        "id": "143c695c479fd955",
+        "type": "inject",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "unpauseRoom",
+        "payloadType": "str",
+        "x": 120,
+        "y": 800,
+        "wires": [
+            [
+                "90ec8cede325ca72"
+            ]
+        ]
+    },
+    {
+        "id": "b9797c1356b15d8a",
+        "type": "inject",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "restartRoom",
+        "payloadType": "str",
+        "x": 110,
+        "y": 900,
+        "wires": [
+            [
+                "fcf3f767d6302882"
+            ]
+        ]
+    },
+    {
+        "id": "954491e56395e152",
+        "type": "function",
+        "z": "470ac55d308056cc",
+        "name": "puzzle 1 completed",
+        "func": "global.set(\"puzzleActual\", parseInt(global.get(\"puzzleActual\")) +1);\nmsg.payload = global.get(\"puzzleActual\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [
+                "d2aba1893d56ec85",
+                "e43fbc6f0eec7050"
+            ]
+        ]
+    },
+    {
+        "id": "6e6019cbf2ec0b45",
+        "type": "change",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameStatus",
+                "pt": "global",
+                "to": "paused",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 700,
+        "wires": [
+            [
+                "0d7a61174d4064e5"
+            ]
+        ]
+    },
+    {
+        "id": "90ec8cede325ca72",
+        "type": "change",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gameStatus",
+                "pt": "global",
+                "to": "unpaused",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 800,
+        "wires": [
+            [
+                "0d7a61174d4064e5"
+            ]
+        ]
+    },
+    {
+        "id": "fcf3f767d6302882",
+        "type": "change",
+        "z": "470ac55d308056cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timeRemaining",
+                "pt": "global",
+                "to": "600",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 940,
+        "wires": [
+            [
+                "6e6019cbf2ec0b45"
+            ]
+        ]
+    },
+    {
+        "id": "615ddc5976c2de54",
+        "type": "link in",
+        "z": "470ac55d308056cc",
+        "name": "link in 1",
+        "links": [
+            "d592bc888853849d"
+        ],
+        "x": 145,
+        "y": 280,
+        "wires": [
+            [
+                "f3e446ee7fb6207b"
+            ]
+        ]
+    },
+    {
+        "id": "d2aba1893d56ec85",
+        "type": "link out",
+        "z": "470ac55d308056cc",
+        "name": "activatePuzzle2 OUT",
+        "mode": "link",
+        "links": [
+            "45aefb0ff024f444"
+        ],
+        "x": 725,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f3e446ee7fb6207b",
+        "type": "function",
+        "z": "470ac55d308056cc",
+        "name": "delete whitespaces",
+        "func": "var payload = msg.payload.replace(/\\s/g, '');\nmsg.payload = payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "0d7a61174d4064e5",
+                "b15023579f3b11d3"
+            ]
+        ]
+    },
+    {
+        "id": "9b200b0b372f6020",
+        "type": "ui_button",
+        "z": "470ac55d308056cc",
+        "name": "pauseRoom",
+        "group": "cd0a282763d62a75",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pause room",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "pauseRoom",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 640,
+        "wires": [
+            [
+                "6e6019cbf2ec0b45"
+            ]
+        ]
+    },
+    {
+        "id": "aaa791875fe856c8",
+        "type": "function",
+        "z": "470ac55d308056cc",
+        "name": "format time",
+        "func": "var minutes = Math.floor(msg.payload / 60);\nvar seconds = msg.payload % 60;\nif(seconds==0){\n    seconds = \"00\";\n}\nmsg.payload = minutes+\":\"+seconds;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "0610ab79fb597378"
+            ]
+        ]
+    },
+    {
+        "id": "0610ab79fb597378",
+        "type": "ui_text",
+        "z": "470ac55d308056cc",
+        "group": "cd0a282763d62a75",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time remaining:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 620,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "18705121d0cca749",
+        "type": "ui_button",
+        "z": "470ac55d308056cc",
+        "name": "unpauseRoom",
+        "group": "cd0a282763d62a75",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Unpause room",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "unpauseRoom",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "90ec8cede325ca72"
+            ]
+        ]
+    },
+    {
+        "id": "cfc6c7205cf2e60e",
+        "type": "ui_button",
+        "z": "470ac55d308056cc",
+        "name": "restartRoom",
+        "group": "cd0a282763d62a75",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart room",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restartRoom",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 860,
+        "wires": [
+            [
+                "fcf3f767d6302882"
+            ]
+        ]
+    },
+    {
+        "id": "e43fbc6f0eec7050",
+        "type": "ui_text",
+        "z": "470ac55d308056cc",
+        "group": "cd0a282763d62a75",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "puzzle actual label",
+        "format": "puzzle actual: {{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 590,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b15023579f3b11d3",
+        "type": "ui_text",
+        "z": "470ac55d308056cc",
+        "group": "cd0a282763d62a75",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "latest debug",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7e6eee87061eb334",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "19200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "155d3c96e37d2ef3",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "19200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "cd0a282763d62a75",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "50cdfefaf6e00793",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "50cdfefaf6e00793",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

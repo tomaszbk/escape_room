@@ -16,10 +16,9 @@ Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
 char getKey() {
   char key = keypad.getKey(); // Read the key from the keypad
-  if (key != NO_KEY) { // If a key is pressed
-    Serial.println("Key pressed: " + String(key)); // Print the key value to serial monitor
+  if (key != NO_KEY) { // If a key is pressed  
     buttonPressedSound(); // Debounce delay because has delay
     return key;
   }
-  return 0;
+  return '0';
 }

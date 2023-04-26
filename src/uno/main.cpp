@@ -8,6 +8,8 @@
 
 
 char codigo[6] = {'3','1','5','4','6','2'};
+char intento[6] = {'0','0','0','0','0','0'};
+
 int8_t codigo_counter = 0;
 int8_t puzzle1IsCorrect = 1; // 0 is False, 1 is True
 int8_t puzzle_actual = 1;
@@ -60,26 +62,24 @@ void loop() {
   if (!isPaused){
 
     if(puzzle_actual == 1){
-      int key = getKey();
-      if(key != 0){
+      char key = getKey();
+      if(key != '0'){
+        intento[codigo_counter] = key;
         if(codigo[codigo_counter] != key){
-          puzzle1IsCorrect = 0;
-          Serial.print("ingreso numero equivocado: ");
-          Serial.print(key);
-          Serial.print(" y deberia haber ingresado: ");
-          Serial.println(codigo[codigo_counter] - '0');
+          puzzle1IsCorrect = 0; //si un intento esta mal, no es correcto
         }
-        if (codigo_counter == 5)
-        {
-          if (puzzle1IsCorrect==1){
+        if (codigo_counter == 5){
+
+          Serial.print("intento: ");
+          Serial.println((char*)intento);
+
+          if (puzzle1IsCorrect){
             puzzle1Completed();
-            Serial.println("puzzle completado");
           }else{
             blockPuzzle1();
           }
         }else{
           codigo_counter++;
-          
         }
       }
 
@@ -141,7 +141,10 @@ void pauseRoom(){
 void restartRoom(){
   puzzle_actual = 1;
   isPaused = 1;
+  puzzle1IsCorrect = 0;
+  codigo_counter =0;
   ledsOff();
   resetTimer();
   resetServo();
+  setupDisplay();
 }
