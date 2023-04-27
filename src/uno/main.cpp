@@ -141,8 +141,8 @@ void pauseRoom(){
 void restartRoom(){
   puzzle_actual = 1;
   isPaused = 1;
-  puzzle1IsCorrect = 0;
   codigo_counter =0;
+  puzzle1IsCorrect = 1;
   ledsOff();
   resetTimer();
   resetServo();
