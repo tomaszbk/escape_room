@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module fritzingVersion="0.6.3b.08.16.5401" moduleId="CMG_ea813e36a43a963dead16e6ff1a7f4a6_5" referenceFile="KEYPAD_4x3__62cc4011a5f8916d45ffe60b851a75f2.fzp">
+ <author>CMG</author>
+ <title>KEYPAD 4x4</title>
+ <label>Matrix keypad</label>
+ <date>sab dic 14 2013</date>
+ <tags>
+  <tag>Keypad</tag>
+ </tags>
+ <properties>
+  <property name="family">Keypad</property>
+  <property name="part number"></property>
+  <property name="variant">variant 1</property>
+ </properties>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Matrix keypad 16 buttons, 4 rows x 4 columns	&lt;/p>&lt;/body>&lt;/html></description>
+ <views>
+  <iconView>
+   <layers image="icon/CMG_73a94d8346c8877535b63b3d4bce08e7_3_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+  <breadboardView>
+   <layers image="breadboard/CMG_73a94d8346c8877535b63b3d4bce08e7_3_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/CMG_73a94d8346c8877535b63b3d4bce08e7_3_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/CMG_73a94d8346c8877535b63b3d4bce08e7_3_pcb.svg">
+    <layer layerId="silkscreen"/>
+   </layers>
+  </pcbView>
+ </views>
+ <connectors>
+  <connector type="female" id="connector26" name="col2">
+   <description>pin1</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector26" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector26" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector26" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector27" name="col3">
+   <description>pin2</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector27" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector27" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector27" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector28" name="col4">
+   <description>pin3</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector28" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector28" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector28" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector29" name="row1">
+   <description>pin4</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector29" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector29" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector29" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector30" name="row2">
+   <description>pin5</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector30" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector30" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector30" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector31" name="row3">
+   <description>pin6</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector31" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector31" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector31" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector25" name="col1">
+   <description>pin0</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector25" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector25" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector25" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector type="female" id="connector32" name="row4">
+   <description>pin7</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector32pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector32pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector32pin" layer="silkscreen"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+</module>

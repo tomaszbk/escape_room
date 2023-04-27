@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="264.63275" version="1.1" gorn="0"  height="270.39194" id="svg2">
+    <desc >
+        <referenceFile >KEYPAD_4x4_schematic.svg</referenceFile>
+    </desc>
+    <metadata  id="metadata3891"/>
+    <defs  id="defs3889"/>
+    <g  transform="translate(1.255914,1.2359154)">
+        <g >
+            <g gorn="0.3.0.0"  id="schematic">
+                <defs  id="defs4">
+                    <linearGradient  id="linearGradient6581">
+                        <stop offset="0"  style="stop-color:#000000;stop-opacity:1;" id="stop6583"/>
+                        <stop offset="1"  style="stop-color:#000000;stop-opacity:0;" id="stop6585"/>
+                    </linearGradient>
+                    <linearGradient  id="linearGradient5086">
+                        <stop offset="0"  style="stop-color:#000000;stop-opacity:1;" id="stop5088"/>
+                        <stop offset="1"  style="stop-color:#000000;stop-opacity:0;" id="stop5090"/>
+                    </linearGradient>
+                    <linearGradient  id="linearGradient4561">
+                        <stop offset="0"  style="stop-color:#333333;stop-opacity:1;" id="stop4563"/>
+                        <stop offset="1"  style="stop-color:#333333;stop-opacity:0;" id="stop4565"/>
+                    </linearGradient>
+                    <linearGradient  gradientTransform="translate(-0.49089974,798.25114)" href="#linearGradient4561" id="linearGradient4764" y1="18.141731" x1="178.39369" y2="219.59055" gradientUnits="userSpaceOnUse" x2="14.740157"/>
+                    <linearGradient  gradientTransform="translate(-0.49089974,798.25114)" href="#linearGradient4561" id="linearGradient5072" y1="216.75487" x1="13.702373" y2="190.78749" gradientUnits="userSpaceOnUse" x2="28.736118"/>
+                    <radialGradient fx="123.26698" fy="978.35016" cx="123.26698"  cy="978.35016" gradientTransform="matrix(-0.00526743,0.26861869,-1.321133,-0.02590814,1384.2937,896.53841)" href="#linearGradient5086" id="radialGradient5078" r="86.494209" gradientUnits="userSpaceOnUse"/>
+                    <linearGradient  href="#linearGradient6581" id="linearGradient6587" y1="980.17365" x1="29.102362" y2="838.81934" x2="150.80315" gradientUnits="userSpaceOnUse"/>
+                </defs>
+                <metadata  id="metadata7">
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <cc:Work xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+                            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                            <dc:type xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+                            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+                        </cc:Work>
+                    </rdf:RDF>
+                </metadata>
+                <g  transform="matrix(1.2291098,0,0,1,-0.09326244,0)">
+                    <g >
+                        <g gorn="0.3.0.0.2.0.0"  id="g5478">
+                            <g gorn="0.3.0.0.2.0.0.0"  id="g5461">
+                                <rect width="212.59842" x="0.40706441" y="0.42706299" stroke-opacity="1" fill="#ffffff" gorn="0.3.0.0.2.0.0.0.0"  height="239.17323" stroke="#000000" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="rect3134" stroke-width="3"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.1"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector25" stroke-width="2.5" d="m 26.502,241.19541 0,26.5748 0,0"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.2"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector26" stroke-width="2.5" d="m 49.331268,241.19541 0,26.5748 0,0"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.3"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector27" stroke-width="2.5" d="m 72.16054,241.19541 0,26.5748 0,0"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.4"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector28" stroke-width="2.5" d="m 94.989817,241.19541 0,26.5748 0,0"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.5"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector29" stroke-width="2.5" d="m 117.81909,241.19541 0,26.5748 0,0"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.6"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector30" stroke-width="2.5" d="m 140.64835,241.19541 0,26.5748 0,0"/>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.7"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector31" stroke-width="2.5" d="m 163.47763,241.19541 0,26.5748 0,0"/>
+                                <rect width="159.01099" x="27.200781" y="26.891541" stroke-opacity="1" fill="#ffffff" gorn="0.3.0.0.2.0.0.0.8"  height="159.01099" stroke="#000000" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="rect3302" stroke-width="1.5"/>
+                                <rect width="52.440964" x="46.410828" y="114.25153" stroke-opacity="1" fill="#ffffff" gorn="0.3.0.0.2.0.0.0.9"  height="56.338295" stroke="#000000" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="rect3308" stroke-width="0.70895994"/>
+                                <rect width="52.440964" x="46.410828" y="42.204285" stroke-opacity="1" fill="#ffffff" gorn="0.3.0.0.2.0.0.0.10"  height="56.338295" stroke="#000000" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="rect3308-1" stroke-width="0.70895994"/>
+                                <rect width="52.440964" x="114.56075" y="42.204285" stroke-opacity="1" fill="#ffffff" gorn="0.3.0.0.2.0.0.0.11"  height="56.338295" stroke="#000000" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="rect3308-4" stroke-width="0.70895994"/>
+                                <rect width="52.440964" x="114.56075" y="114.25153" stroke-opacity="1" fill="#ffffff" gorn="0.3.0.0.2.0.0.0.12"  height="56.338295" stroke="#000000" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" fill-opacity="1" id="rect3308-2" stroke-width="0.70895994"/>
+                                <g fill="#000000" gorn="0.3.0.0.2.0.0.0.13"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3191" xml:space="preserve" font-size="18">
+                                    <text x="74.859108" y="21.664734" gorn="0.3.0.0.2.0.0.0.13.0"  id="tspan3193">KEYPAD</text>
+                                </g>
+                                <path stroke-opacity="1" fill="none" gorn="0.3.0.0.2.0.0.0.14"  stroke="#000000" style="stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" id="connector32pin" stroke-width="2.5" d="m 186.30691,241.19541 0,26.5748 0,0"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g  transform="matrix(1.2778966,0,0,1,-5.3878571,0)">
+                    <g >
+                        <g gorn="0.3.0.0.3.0.0"  id="g5445">
+                            <g  transform="matrix(0.0038448,0.99999261,-0.99999261,0.0038448,2.1844041,-3.5889976)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.0.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3199" xml:space="preserve" font-size="10">
+                                        <text x="220.44919" y="-21.908213" gorn="0.3.0.0.3.0.0.0.0.0.0"  id="tspan3201">col1</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0.0038448,0.99999261,-0.99999261,0.0038448,-29.333427,-3.9877751)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.1.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3199-8" xml:space="preserve" font-size="10">
+                                        <text x="220.65421" y="-75.229553" gorn="0.3.0.0.3.0.0.1.0.0.0"  id="tspan3201-2">col2</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0.0038448,0.99999261,-0.99999261,0.0038448,-59.915084,-3.1902201)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.2.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3199-4" xml:space="preserve" font-size="10">
+                                        <text x="220.85818" y="-128.28287" gorn="0.3.0.0.3.0.0.2.0.0.0"  id="tspan3201-5">col3</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0,1,-1,0,62.411546,-5.5828853)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.3.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3233" xml:space="preserve" font-size="10">
+                                        <text x="219.93039" y="-50.418839" gorn="0.3.0.0.3.0.0.3.0.0.0"  id="tspan3235">row1</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0,1,-1,0,30.893715,-5.5828852)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.4.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3233-1" xml:space="preserve" font-size="10">
+                                        <text x="219.93039" y="-103.53519" gorn="0.3.0.0.3.0.0.4.0.0.0"  id="tspan3235-1">row2</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0,1,-1,0,0.93617319,-5.9816627)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.5.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3233-5" xml:space="preserve" font-size="10">
+                                        <text x="219.93039" y="-156.80586" gorn="0.3.0.0.3.0.0.5.0.0.0"  id="tspan3235-2">row3</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0,1,-1,0,-2.8085196,0.79755503)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.6.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3233-7" xml:space="preserve" font-size="10">
+                                        <text x="213.15117" y="-182.87132" gorn="0.3.0.0.3.0.0.6.0.0.0"  id="tspan3235-6">row4</text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g  transform="matrix(0,1,-1,0,-91.093844,4.3818118)">
+                                <g >
+                                    <g fill="#000000" gorn="0.3.0.0.3.0.0.7.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text3233-7-3" xml:space="preserve" font-size="10">
+                                        <text x="213.15117" y="-182.87132" gorn="0.3.0.0.3.0.0.7.0.0.0"  id="tspan3235-6-6">col4</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g  transform="translate(0.40706441,-786.1875)">
+                    <g >
+                        <g gorn="0.3.0.0.4.0.0"  id="layer1"/>
+                    </g>
+                </g>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.5"  height="5" style="fill:none" id="rect3860"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.6"  height="5" style="fill:none" id="rect3862"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.7"  height="5" style="fill:none" id="rect3864"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.8"  height="5" style="fill:none" id="rect3866"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.9"  height="5" style="fill:none" id="rect3868"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.10"  height="5" style="fill:none" id="rect3870"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.11"  height="5" style="fill:none" id="rect3872"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.12"  height="5" style="fill:none" id="rect3874"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.13"  height="5" style="fill:none" id="rect3876"/>
+                <rect width="5" x="106.70394" y="133.09375" gorn="0.3.0.0.14"  height="5" style="fill:none" id="rect3878"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806" icon="Search.png" search="battery">
+    <title>Search</title>
+    <instances>
+        <instance moduleIdRef="Arduino-Fio-v22(fix)" modelIndex="85413485" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino-Fio-v22(fix).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-245MM" modelIndex="85413487" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-245mm.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-12PTH" modelIndex="85413489" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-12pth.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="rtc_ds3231_breakout" modelIndex="85413491" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/rtc_ds3231_breakout.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-LM2931-" modelIndex="85413493" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-lm2931-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-AA" modelIndex="85413495" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-aa.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="OBD-II-UART-v13" modelIndex="85413497" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/OBD-II-UART-v13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="1000AFDF10011leg" modelIndex="85413499" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/battery-AA.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MAX1555-" modelIndex="85413500" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-max1555-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="gs1011_breakout-v11" modelIndex="85413502" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/gs1011_breakout-v11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerCell-v13" modelIndex="85413504" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/PowerCell Lipo Charger Booster v13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Lilypad_PowerSupply-v18" modelIndex="85413506" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Lilypad_PowerSupply-v18.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="electron_board" modelIndex="85413508" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/electron_board.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ds1809_ic_dip" modelIndex="85413510" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/ds2809_ic.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-LM2931_FIXED-" modelIndex="85413512" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-lm2931_fixed-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino DUE V02b" modelIndex="85413514" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_DUE_V02b.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="blueIOT_Rc1-final" modelIndex="85413516" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/blueIOT_Rc1-final.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad_Arduino_USB" modelIndex="85413517" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad_Arduino_USB.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-245PTH" modelIndex="85413519" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-245pth.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Connectors-BC9VPC-" modelIndex="85413521" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-connectors-bc9vpc-.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad Coincell-Battery-v17" modelIndex="85413523" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad Coincell-Battery-v17.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WeMos_D1_Mini_Battery_Shield_no_headers" modelIndex="85413525" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/WeMos-D1-mini-Battery-Shield-no-headers.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="DeadOn RTC - DS3234 Breakout-v11" modelIndex="85413527" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/DeadOn RTC - DS3234 Breakout-v11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-FOB" modelIndex="85413529" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-fob.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-LIPO-OUTLINE-1100" modelIndex="85413531" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-lipo-outline-1100.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino_Leonardo_Rev3(fix)" modelIndex="85413533" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_Leonardo_Rev3(fix).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="EspruinoPico" modelIndex="85413535" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/EspruinoPico_8fb644a5b6642112445ed6d90bc494d8_6.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MCP7384XX-" modelIndex="85413537" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-mcp7384xx-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerSupply-Lipo-v15" modelIndex="85413539" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/PowerSupply-Lipo-v15.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Electromechanical-BATTERY-AA-KIT" modelIndex="85413541" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/electromechanical-battery-aa-kit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino-Fio-v22(icsp+)_bottom" modelIndex="85413543" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino-Fio-v22(iscp+)-bottom.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LiPo-USB-Charger-v21" modelIndex="85413545" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/LiPo-USB-Charger-v21.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="GPSShield-v15" modelIndex="85413547" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/GPSShield-v15.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-20MM_4LEGS" modelIndex="85413549" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-20mm_4legs.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MCP73831-" modelIndex="85413551" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-mcp73831-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-FreqCtrl-DS1307-SO8" modelIndex="85413553" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-freqctrl-ds1307-so8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="arduino_Uno_Rev3(fix)" modelIndex="85413555" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/arduino_Uno_Rev3(fix).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="DFRobot_DFPlayer_Mini" modelIndex="85413556" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/DFRobot-DFPlayer-Mini.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino-Fio-v22(fix)_bottom" modelIndex="85413558" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino-Fio-v22(fix)-bottom.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="c7c8e292b3beec531de0c51f2576d329" modelIndex="85413560" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/4 x AAA Battery Mount.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="77c36646df552e9fe72f360837f556ccleg" modelIndex="85413562" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Battery block 9V.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MAX98300-ETA+" modelIndex="85413564" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-max98300-eta_.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MAX1704X-" modelIndex="85413566" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-max1704x-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Real_Time_Clock_Module___DS1307_RTC_Breakout_Board" modelIndex="85413568" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Real_Time_Clock_Module___DS1307_RTC_Breakout_Board.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-LIPO-OUTLINE-100" modelIndex="85413570" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-lipo-outline-100.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino_MEGA_2560-Rev3(fix)" modelIndex="85413572" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_MEGA_2560-Rev3(fix).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ITG-3200-v11" modelIndex="85413574" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/ITG-3200-v11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="huzzah_esp8266" modelIndex="85413576" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/huzzah_esp8266.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ArduPilotMega_v15" modelIndex="85413578" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/ArduPilotMega_v15.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-FKIT-COIN_CELL-LIR2450-H" modelIndex="85413580" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-fkit-coin_cell-lir2450-h.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-LIPO-OUTLINE-2000" modelIndex="85413582" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-lipo-outline-2000.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Bean_revE" modelIndex="85413584" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Bean_revE.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MCP73833-" modelIndex="85413585" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-mcp73833-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Memoire-1.0" modelIndex="85413587" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Memoire-1.0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="intel_edison_minibreakout_bottom_fix" modelIndex="85413589" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel_edison_minibreakout-bottom_fix.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-20SMD" modelIndex="85413591" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-20smd.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino Pro" modelIndex="85413593" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_Pro.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-MAX98306-ETD+" modelIndex="85413595" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-max98306-etd_.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="NCP1400_5V_Step-Up_v11" modelIndex="85413597" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/NCP1400_5V_Step-Up_v11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ArduinoBluetoothMatev13" modelIndex="85413599" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/ArduinoBluetoothMatev13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-AA-PANEL" modelIndex="85413601" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-aa-panel.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Electromechanical-BATTERY-2-AAA" modelIndex="85413603" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/electromechanical-battery-2-aaa.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Electromechanical-BATTERY-2-AA" modelIndex="85413605" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/electromechanical-battery-2-aa.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerBoost 500C - Adafruit" modelIndex="85413607" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/PowerBoost 500C - Adafruit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="blueIOT_RevB" modelIndex="85413609" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino-BLE-LowPower-RevB-final_5.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Electromechanical-BATTERY-AA" modelIndex="85413611" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/electromechanical-battery-aa.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="arduino_uno(rev3)-icsp_only" modelIndex="85413613" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/arduino_uno(rev3)-icsp(1).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-20PTH" modelIndex="85413615" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-20pth.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-12MM" modelIndex="85413617" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-12mm.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino-Fio-v22(icsp+)" modelIndex="85413619" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino-Fio-v22(iscp+).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad SimplePower-v13" modelIndex="85413621" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad SimplePower-v13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-20PTH2" modelIndex="85413623" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-20pth2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad Battery-Connect-v11" modelIndex="85413625" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad Battery-Connect-v11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BATTERY-1100" modelIndex="85413627" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-battery-1100.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-FreqCtrl-DS3234-" modelIndex="85413629" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-freqctrl-ds3234-.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="arduino_uno(rev3)-icsp" modelIndex="85413631" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/arduino_uno(rev3)-icsp.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="intel_edison_minibreakout_fix" modelIndex="85413633" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel_edison_minibreakout_fix.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Electromechanical-BATTERY-AAA" modelIndex="85413635" path="C:/Users/zubik/Downloads/fritzing.0.9.3b.64.pc/fritzing-parts/core/electromechanical-battery-aaa.fzp">
+            <views/>
+        </instance>
+    </instances>
+</module>

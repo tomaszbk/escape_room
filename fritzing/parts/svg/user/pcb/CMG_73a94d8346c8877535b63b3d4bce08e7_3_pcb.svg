@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="191.33858" version="1.1" gorn="0"  height="255.1181" id="svg3028">
+    <desc >
+        <referenceFile >KEYPAD_4x4.pcb.svg</referenceFile>
+    </desc>
+    <metadata  id="metadata4273"/>
+    <defs  id="defs4271"/>
+    <g gorn="0.3"  id="copper0">
+        <defs  id="defs3030"/>
+        <metadata  id="metadata3033">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <cc:Work xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+                    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                    <dc:type xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+                    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+                </cc:Work>
+            </rdf:RDF>
+        </metadata>
+        <g gorn="0.3.2"  style="display:inline" id="silkscreen">
+            <rect width="135" x="27.5" y="240.1181" stroke-opacity="1" fill="none" gorn="0.3.2.0"  height="15" stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="rect3184" stroke-width="1"/>
+            <rect width="190" x="0" y="0.11810262" stroke-opacity="1" fill="none" gorn="0.3.2.1"  ry="5.0000005" height="240" stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="rect4044" stroke-width="1"/>
+            <rect width="167.4476" x="11.276199" y="11.591187" stroke-opacity="1" fill="none" gorn="0.3.2.2"  ry="8.5269165" height="217.05391" stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="rect4046" stroke-width="2.63113785"/>
+            <path stroke-opacity="1" fill="none" gorn="0.3.2.3"  stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path4074" stroke-width="1" d="m 182.5,232.6181 a 2.5,2.5 0 0 1 -5,0 2.5,2.5 0 1 1 5,0 z"/>
+            <path stroke-opacity="1" fill="none" gorn="0.3.2.4"  stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path4074-2" stroke-width="1" d="m 182.5,7.6181 a 2.5,2.5 0 0 1 -5,0 2.5,2.5 0 1 1 5,0 z"/>
+            <path stroke-opacity="1" fill="none" gorn="0.3.2.5"  stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path4074-5" stroke-width="1" d="m 10,232.6181 a 2.5,2.5 0 0 1 -5,0 2.5,2.5 0 1 1 5,0 z"/>
+            <path stroke-opacity="1" fill="none" gorn="0.3.2.6"  stroke="#ffffff" style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path4074-2-7" stroke-width="1" d="m 10,7.6181 a 2.5,2.5 0 0 1 -5,0 2.5,2.5 0 1 1 5,0 z"/>
+            <g  transform="translate(0,-797.24408)">
+                <g >
+                    <g fill="#ffffff" gorn="0.3.2.7.0.0"  stroke="none" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:Droid Sans;-inkscape-font-specification:Droid Sans" fill-opacity="1" id="text4158" xml:space="preserve" font-size="6">
+                        <text x="85.332031" y="1033.6859" gorn="0.3.2.7.0.0.0"  id="tspan4160">keypad</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g gorn="0.3.3"  id="coopper">
+            <g  transform="translate(4.4257153,-797.24408)">
+                <g >
+                    <g gorn="0.3.3.0.0.0"  id="g4184">
+                        <g  transform="matrix(0,1.25,-1.25,0,131.82571,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.0.0.0"  cy="25.92" stroke="#ffbf00" r="1.584" id="connector4pad" stroke-width="1.15199995" d="m 27.504,25.92 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.584 1.584,-1.584 0.874819,0 1.584,0.709181 1.584,1.584 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,131.67714,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.1.0.0"  cy="18.719999" stroke="#ffbf00" r="1.584" id="connector5pad" stroke-width="1.15199995" d="m 27.504,18.719999 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.584 1.584,-1.584 0.874819,0 1.584,0.709181 1.584,1.584 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,131.52857,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.2.0.0"  cy="11.52" stroke="#ffbf00" r="1.584" id="connector6pad" stroke-width="1.15199995" d="m 27.504,11.52 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.5839995 1.584,-1.5839995 0.874819,0 1.584,0.7091805 1.584,1.5839995 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,96.42,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.3.0.0"  cy="25.92" stroke="#ffbf00" r="1.584" id="connector4pad-5" stroke-width="1.15199995" d="m 27.504,25.92 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.584 1.584,-1.584 0.874819,0 1.584,0.709181 1.584,1.584 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,96.271428,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.4.0.0"  cy="18.719999" stroke="#ffbf00" r="1.584" id="connector5pad-1" stroke-width="1.15199995" d="m 27.504,18.719999 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.584 1.584,-1.584 0.874819,0 1.584,0.709181 1.584,1.584 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,96.122856,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.5.0.0"  cy="11.52" stroke="#ffbf00" r="1.584" id="connector6pad-7" stroke-width="1.15199995" d="m 27.504,11.52 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.5839995 1.584,-1.5839995 0.874819,0 1.584,0.7091805 1.584,1.5839995 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,95.974284,1012.4622)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.6.0.0"  cy="4.3200002" stroke="#ffbf00" r="1.584" id="connector7pad-1" stroke-width="1.15199995" d="m 27.504,4.3200002 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.8748191 0.709181,-1.584 1.584,-1.584 0.874819,0 1.584,0.7091809 1.584,1.584 z"/>
+                            </g>
+                        </g>
+                        <g  transform="matrix(0,1.25,-1.25,0,86.450023,1012.3183)">
+                            <g >
+                                <circle fill="none" cx="25.92" gorn="0.3.3.0.0.0.7.0.0"  cy="25.92" stroke="#ffbf00" r="1.584" id="connector25" stroke-width="1.15199995" d="m 27.504,25.92 c 0,0.874819 -0.709181,1.584 -1.584,1.584 -0.874819,0 -1.584,-0.709181 -1.584,-1.584 0,-0.874819 0.709181,-1.584 1.584,-1.584 0.874819,0 1.584,0.709181 1.584,1.584 z"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect width="5" x="95.66929" y="127.55905" fill="none" gorn="0.3.4"  height="5.000000000000014" id="connector24"/>
+        <rect width="6.036420674548921" x="74.42946626380065" y="244.0425541027858" fill="none" gorn="0.3.5"  height="6.565036427552514" id="connector27"/>
+        <rect width="5.406500587396209" x="83.16913723204763" y="244.4287327161712" fill="none" gorn="0.3.6"  height="6.178857814167088" id="connector28"/>
+        <rect width="5.792679200781635" x="92.43742395329829" y="244.184991242404" fill="none" gorn="0.3.7"  height="6.422599287934361" id="connector29"/>
+        <rect width="5" x="101.4619692007817" y="245.3435270825602" fill="none" gorn="0.3.8"  height="5" id="connector30"/>
+        <rect width="5" x="110.3440773086468" y="244.9573484691748" fill="none" gorn="0.3.9"  height="5" id="connector31"/>
+        <rect width="5" x="119.226185416512" y="245.3435270825602" fill="none" gorn="0.3.10"  height="5" id="connector32pin"/>
+        <rect width="4.756258526232713" x="65.79109962970267" y="244.5711698557893" fill="none" gorn="0.3.11"  height="6.036420674548936" id="connector26"/>
+    </g>
+</svg>
