@@ -20,4 +20,5 @@ made possible by the communication between the components and the Game Master's 
 - C++
 - Node-Red
 - Mosquitto
+- PlatformIo
 
