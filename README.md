@@ -1,6 +1,6 @@
 # escape_room
 ### Summary:
-Transformed my bedroom into an escape room! combining electronics knowledge with programming, I designed and then put into action an experience 
+Transformed my bedroom into an escape room! Combining electronics knowledge with programming, I designed and then put into action an experience 
 made possible by the communication between the components and the Game Master's terminal 
 
 ### Requirements:
