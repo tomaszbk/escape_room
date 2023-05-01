@@ -22,20 +22,21 @@ made possible by the communication between the components and the Game Master's 
 - Mosquitto
 - PlatformIo
 
-  ### Main challenges Overcomed
+### Main challenges Overcomed
  - Setting up and syncing the inter-device data communications (Serial and MQTT).</li>
  - Setting the room's full status control and debug log for a Game Master</li>
  - Developing the respective board's codes in a fully modulized way, making code easy to reuse in the future.
  
-Fritzing diagrams:
-![alt text](https://github.com/kukelia/escape_room/blob/master/fritzing/escape_room_arduino.png)
-![alt text](https://github.com/kukelia/escape_room/blob/master/fritzing/escape_room_esp32.png "hola")
+## Fritzing diagrams:
+<img src="https://github.com/kukelia/escape_room/blob/master/fritzing/escape_room_arduino.png" alt= “” width="850" height="550">
+<img src="https://github.com/kukelia/escape_room/blob/master/fritzing/escape_room_esp32.png" alt= “” width="850" height="550">
 
-Node-red screenshot:
-![alt text](https://github.com/kukelia/escape_room/blob/master/img/node-red-example.png)
+## Node-red screenshot:
+<img src="https://github.com/kukelia/escape_room/blob/master/img/node-red-example.png" alt= “” width="900" height="600">
 
-Gamemaster's Dashboard:
-![alt text](https://github.com/kukelia/escape_room/blob/master/img/dashboard.jpeg)
+## Gamemaster's Dashboard:
+<img src="https://github.com/kukelia/escape_room/blob/master/img/dashboard.jpeg" alt= “” width="300" height="600">
 
-Escape Room Demonstration
-![alt text](https://github.com/kukelia/escape_room/blob/master/img/demonstration.mp4)
+## Escape Room Demonstration
+https://user-images.githubusercontent.com/85851175/235522523-4b475099-6c93-435e-834e-76cc130d574e.mp4
+
