@@ -7,7 +7,7 @@ made possible by the communication between the components and the Game Master's 
 **Hardware**:
 - Arduino UNO
 - ESP32
-- diodes
+- LEDs
 - buzzer
 - lcd 16x2 display
 - Shift register
