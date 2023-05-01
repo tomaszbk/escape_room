@@ -29,7 +29,7 @@ int8_t checkRfid() {
 					return 0;
 				}				         
 			}
-			delay(800); //check the card is still present
+			delay(500); //check the card is still present
 			for (int i = 5; i > 0; i--)
 			{	
 				if (rfid.PICC_IsNewCardPresent()) {
