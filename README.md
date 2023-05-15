@@ -3,7 +3,7 @@
 Transformed my bedroom into an escape room! Combining electronics knowledge with programming, I designed and then put into action an experience 
 made possible by the communication between the components and the Game Master's terminal dashboard
 
-###🖥️ Requirements:
+### 🖥️ Requirements:
 **Hardware**:
 - Arduino UNO
 - ESP32
@@ -22,7 +22,7 @@ made possible by the communication between the components and the Game Master's 
 - Mosquitto
 - PlatformIo
 
-###🏆 Main challenges Overcomed
+### 🏆 Main challenges Overcomed
  - Setting up and syncing the inter-device data communications (Serial and MQTT).</li>
  - Setting the room's full status control and debug log for a Game Master</li>
  - Developing the respective board's codes in a fully modulized way, making code easy to reuse in the future.
