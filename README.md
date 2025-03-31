@@ -37,8 +37,8 @@ made possible by the communication between the components and the Game Master's 
 ## Gamemaster's Dashboard:
 <img src="https://github.com/kukelia/escape_room/blob/master/img/dashboard.jpeg" alt= “” width="300" height="600">
 
-## Escape Room Demonstration 🔎
-https://user-images.githubusercontent.com/85851175/235522523-4b475099-6c93-435e-834e-76cc130d574e.mp4
+<!-- ## Escape Room Demonstration 🔎
+https://user-images.githubusercontent.com/85851175/235522523-4b475099-6c93-435e-834e-76cc130d574e.mp4 -->
 
 The Room's first puzzle involves finding a code and inserting it in the 4x4 keypad.  
 The second puzzle is solved placing an RFID card on a specific book (which has a hidden RFID reader).  
